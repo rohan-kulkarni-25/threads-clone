@@ -3,7 +3,7 @@ import ThreadCard from "./components/ThreadCard";
 
 const { View, Text, ScrollView } = require("react-native");
 
-const ScrollScreen = () => {
+const ScrollScreen = ({ navigation }) => {
   return (
     <View style={tw`bg-white flex-1`}>
       <ScrollView showsVerticalScrollIndicator={false}>

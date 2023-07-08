@@ -9,6 +9,7 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 import ActivityScreen from "../screens/Activity/ActivityScreen";
 import SearchScreen from "../screens/Search/SearchScreen";
 import ScrollScreen from "../screens/Scroll/ScrollScreen";
+import StackNavigator from "./stackNavigator";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +31,7 @@ const BottomTabNavigation = () => {
           tabBarIcon: () => <Entypo name="home" size={24} color="black" />,
         }}
         name="Scroll"
-        component={ScrollScreen}
+        component={StackNavigator}
       />
       <Tab.Screen
         options={{
